@@ -1,12 +1,33 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import VelaNavbar from "@/components/VelaNavbar";
+import VelaHero from "@/components/VelaHero";
+import VelaPrompts from "@/components/VelaPrompts";
+import VelaChatCard from "@/components/VelaChatCard";
+import VelaCapabilities from "@/components/VelaCapabilities";
+import VelaChannels from "@/components/VelaChannels";
+import VelaCTA from "@/components/VelaCTA";
 
 const Index = () => {
+  const [inputValue, setInputValue] = useState("");
+
+  const handlePromptSelect = (prompt: string) => {
+    setInputValue(prompt);
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <VelaNavbar />
+      <main className="px-4 sm:px-6">
+        <VelaHero />
+        <VelaPrompts onSelect={handlePromptSelect} />
+        <VelaChatCard inputValue={inputValue} setInputValue={setInputValue} />
+        <VelaCapabilities />
+        <VelaChannels />
+        <VelaCTA />
+      </main>
+      <footer className="border-t border-border py-6 text-center text-xs text-muted-foreground">
+        © 2026 VelaCX. All rights reserved.
+      </footer>
     </div>
   );
 };

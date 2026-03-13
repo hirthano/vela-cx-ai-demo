@@ -65,7 +65,7 @@ const Index = () => {
           href="https://reorc.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-1.5 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground"
+          className="flex items-center gap-1.5 text-xs font-medium text-primary-foreground/80 transition-colors hover:text-primary-foreground"
         >
           reorc.com
           <ExternalLink className="h-3 w-3" />

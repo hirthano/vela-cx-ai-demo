@@ -52,12 +52,12 @@ const Index = () => {
   return (
     <div className="flex h-screen flex-col bg-background">
       {/* Navbar */}
-      <nav className="flex items-center justify-between border-b border-border/60 px-5 py-3">
+      <nav className="flex items-center justify-between px-5 py-3.5" style={{ background: "var(--gradient-cta)" }}>
         <div className="flex items-center gap-2.5">
-          <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary">
+          <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary-foreground/20">
             <Sparkles className="h-3.5 w-3.5 text-primary-foreground" />
           </div>
-          <span className="text-base font-bold tracking-tight text-foreground" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+          <span className="text-base font-bold tracking-tight text-primary-foreground" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
             VelaCX
           </span>
         </div>
@@ -65,7 +65,7 @@ const Index = () => {
           href="https://reorc.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-1.5 text-xs font-medium text-muted-foreground transition-colors hover:text-foreground"
+          className="flex items-center gap-1.5 text-xs font-medium text-primary-foreground/80 transition-colors hover:text-primary-foreground"
         >
           reorc.com
           <ExternalLink className="h-3 w-3" />
@@ -180,8 +180,8 @@ const Index = () => {
         </motion.div>
 
         {/* Footnote */}
-        <p className="mt-3 text-center text-[10px] text-muted-foreground">
-          Demo built from publicly available info · Full deployment integrates with your knowledge base & support systems
+        <p className="mt-3 max-w-lg text-center text-[10px] leading-relaxed text-muted-foreground">
+          ⚡ This demo is based on limited public data only. After onboarding, our team will optimise your AI — building custom workflows, deeper knowledge bases, and fine-tuned responses for significantly better results.
         </p>
       </div>
     </div>

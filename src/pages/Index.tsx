@@ -180,8 +180,8 @@ const Index = () => {
         </motion.div>
 
         {/* Footnote */}
-        <p className="mt-3 text-center text-[10px] text-muted-foreground">
-          Demo built from publicly available info · Full deployment integrates with your knowledge base & support systems
+        <p className="mt-3 max-w-lg text-center text-[10px] leading-relaxed text-muted-foreground">
+          ⚡ This demo is based on limited public data only. After onboarding, our team will optimise your AI — building custom workflows, deeper knowledge bases, and fine-tuned responses for significantly better results.
         </p>
       </div>
     </div>

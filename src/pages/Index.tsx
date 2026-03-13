@@ -57,7 +57,7 @@ const Index = () => {
           <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary-foreground/20">
             <Sparkles className="h-3.5 w-3.5 text-primary-foreground" />
           </div>
-          <span className="text-base font-bold tracking-tight text-foreground" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
+          <span className="text-base font-bold tracking-tight text-primary-foreground" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
             VelaCX
           </span>
         </div>

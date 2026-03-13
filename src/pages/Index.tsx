@@ -4,22 +4,22 @@ import { Sparkles, Send, Loader2, ExternalLink } from "lucide-react";
 
 const sampleResponses: Record<string, string> = {
   "Do you ship internationally?":
-    "Yes! We offer international shipping to most countries. Delivery times vary by region — typically 7-14 business days. Free shipping is available for orders over $100 within select regions.",
+  "Yes! We offer international shipping to most countries. Delivery times vary by region — typically 7-14 business days. Free shipping is available for orders over $100 within select regions.",
   "What is your return policy?":
-    "We offer a 30-day return policy for unused items in original packaging. Refunds are processed within 5-7 business days after we receive the returned item.",
+  "We offer a 30-day return policy for unused items in original packaging. Refunds are processed within 5-7 business days after we receive the returned item.",
   "How long does delivery take?":
-    "Domestic orders: 3-5 business days\nRegional (Southeast Asia): 5-10 business days\nInternational: 7-14 business days\n\nExpedited shipping options are available at checkout.",
+  "Domestic orders: 3-5 business days\nRegional (Southeast Asia): 5-10 business days\nInternational: 7-14 business days\n\nExpedited shipping options are available at checkout."
 };
 
 const prompts = [
-  "Do you ship internationally?",
-  "What is your return policy?",
-  "How long does delivery take?",
-];
+"Do you ship internationally?",
+"What is your return policy?",
+"How long does delivery take?"];
+
 
 const Index = () => {
   const [inputValue, setInputValue] = useState("");
-  const [messages, setMessages] = useState<{ role: "user" | "assistant"; content: string }[]>([]);
+  const [messages, setMessages] = useState<{role: "user" | "assistant";content: string;}[]>([]);
   const [isTyping, setIsTyping] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
 
@@ -34,8 +34,8 @@ const Index = () => {
     setInputValue("");
     setIsTyping(true);
     const response =
-      sampleResponses[msg] ||
-      "Great question! In a full deployment, I'd pull answers directly from your knowledge base and support systems to give accurate, real-time responses.";
+    sampleResponses[msg] ||
+    "Great question! In a full deployment, I'd pull answers directly from your knowledge base and support systems to give accurate, real-time responses.";
     setTimeout(() => {
       setIsTyping(false);
       setMessages((prev) => [...prev, { role: "assistant", content: response }]);
@@ -65,8 +65,8 @@ const Index = () => {
           href="https://reorc.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-1.5 text-xs font-medium text-primary-foreground/80 transition-colors hover:text-primary-foreground"
-        >
+          className="flex items-center gap-1.5 text-xs font-medium text-primary-foreground/80 transition-colors hover:text-primary-foreground">
+          
           reorc.com
           <ExternalLink className="h-3 w-3" />
         </a>
@@ -79,8 +79,8 @@ const Index = () => {
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="mb-5 text-center"
-        >
+          className="mb-5 text-center">
+          
           <h1 className="text-xl font-bold tracking-tight text-foreground sm:text-2xl">
             Try Your AI Customer Assistant
           </h1>
@@ -90,30 +90,30 @@ const Index = () => {
         </motion.div>
 
         {/* Prompt chips */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.4, delay: 0.1 }}
-          className="mb-4 flex flex-wrap justify-center gap-2"
-        >
-          {prompts.map((p, i) => (
-            <button
-              key={i}
-              onClick={() => handleSend(p)}
-              className="rounded-full border border-border bg-card px-3.5 py-1.5 text-xs font-medium text-muted-foreground transition-all hover:border-primary/30 hover:text-foreground hover:shadow-sm"
-            >
-              {p}
-            </button>
-          ))}
-        </motion.div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
 
         {/* Chat card - flexes to fill */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.15 }}
-          className="flex w-full max-w-2xl min-h-0 flex-1 flex-col overflow-hidden rounded-xl border border-border bg-card shadow-sm"
-        >
+          className="flex w-full max-w-2xl min-h-0 flex-1 flex-col overflow-hidden rounded-xl border border-border bg-card shadow-sm">
+          
           {/* Chat header */}
           <div className="flex items-center gap-2 border-b border-border px-4 py-2.5">
             <div className="flex h-5 w-5 items-center justify-center rounded-md bg-primary/10">
@@ -128,32 +128,32 @@ const Index = () => {
 
           {/* Messages area */}
           <div className="flex-1 overflow-y-auto px-4 py-3">
-            {messages.length === 0 && !isTyping && (
-              <div className="flex h-full items-center justify-center">
+            {messages.length === 0 && !isTyping &&
+            <div className="flex h-full items-center justify-center">
                 <p className="text-center text-xs text-muted-foreground">
                   Click a prompt above or type your own question.
                 </p>
               </div>
-            )}
-            {messages.map((msg, i) => (
-              <div key={i} className={`mb-2.5 ${msg.role === "user" ? "flex justify-end" : ""}`}>
-                {msg.role === "user" ? (
-                  <div className="max-w-[75%] rounded-2xl rounded-br-sm bg-primary px-3.5 py-2 text-sm text-primary-foreground">
+            }
+            {messages.map((msg, i) =>
+            <div key={i} className={`mb-2.5 ${msg.role === "user" ? "flex justify-end" : ""}`}>
+                {msg.role === "user" ?
+              <div className="max-w-[75%] rounded-2xl rounded-br-sm bg-primary px-3.5 py-2 text-sm text-primary-foreground">
+                    {msg.content}
+                  </div> :
+
+              <div className="max-w-[85%] rounded-2xl rounded-tl-sm border border-border bg-secondary/40 px-3.5 py-2.5 text-sm leading-relaxed text-foreground whitespace-pre-line">
                     {msg.content}
                   </div>
-                ) : (
-                  <div className="max-w-[85%] rounded-2xl rounded-tl-sm border border-border bg-secondary/40 px-3.5 py-2.5 text-sm leading-relaxed text-foreground whitespace-pre-line">
-                    {msg.content}
-                  </div>
-                )}
+              }
               </div>
-            ))}
-            {isTyping && (
-              <div className="flex items-center gap-1.5 text-muted-foreground">
+            )}
+            {isTyping &&
+            <div className="flex items-center gap-1.5 text-muted-foreground">
                 <Loader2 className="h-3 w-3 animate-spin text-primary" />
                 <span className="text-xs">Typing…</span>
               </div>
-            )}
+            }
             <div ref={bottomRef} />
           </div>
 
@@ -166,13 +166,13 @@ const Index = () => {
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Ask a question…"
-                className="flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground focus:outline-none"
-              />
+                className="flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground focus:outline-none" />
+              
               <button
                 onClick={() => handleSend()}
                 disabled={!inputValue.trim() || isTyping}
-                className="flex h-7 w-7 items-center justify-center rounded-md bg-primary text-primary-foreground transition-opacity disabled:opacity-30"
-              >
+                className="flex h-7 w-7 items-center justify-center rounded-md bg-primary text-primary-foreground transition-opacity disabled:opacity-30">
+                
                 <Send className="h-3.5 w-3.5" />
               </button>
             </div>
@@ -184,8 +184,8 @@ const Index = () => {
           ⚡ This demo is based on limited public data only. After onboarding, our team will optimise your AI — building custom workflows, deeper knowledge bases, and fine-tuned responses for significantly better results.
         </p>
       </div>
-    </div>
-  );
+    </div>);
+
 };
 
 export default Index;

@@ -121,7 +121,7 @@ const Index = () => {
             </div>
             <span className="text-xs font-semibold text-foreground">VelaCX Assistant</span>
             <span className="ml-auto flex items-center gap-1 text-[10px] text-muted-foreground">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+              <span className="h-1.5 w-1.5 rounded-full" style={{ backgroundColor: "hsl(160, 84%, 39%)" }} />
               Online
             </span>
           </div>

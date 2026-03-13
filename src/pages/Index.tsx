@@ -96,14 +96,14 @@ const Index = () => {
           transition={{ duration: 0.4, delay: 0.1 }}
           className="mb-4 flex flex-wrap justify-center gap-2">
           
-          {prompts.map((p, i) =>
-          <button
-            key={i}
-            onClick={() => handleSend(p)}
-            className="rounded-full border border-border bg-card px-3.5 py-1.5 text-xs font-medium text-muted-foreground transition-all hover:border-primary/30 hover:text-foreground hover:shadow-sm">
-            
-              {p}
-            </button>
+          {prompts.map((p, i) => {}
+
+
+
+
+
+
+
           )}
         </motion.div>
 

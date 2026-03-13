@@ -52,9 +52,9 @@ const Index = () => {
   return (
     <div className="flex h-screen flex-col bg-background">
       {/* Navbar */}
-      <nav className="flex items-center justify-between border-b border-border/60 px-5 py-3">
+      <nav className="flex items-center justify-between px-5 py-3.5" style={{ background: "var(--gradient-cta)" }}>
         <div className="flex items-center gap-2.5">
-          <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary">
+          <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-primary-foreground/20">
             <Sparkles className="h-3.5 w-3.5 text-primary-foreground" />
           </div>
           <span className="text-base font-bold tracking-tight text-foreground" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>

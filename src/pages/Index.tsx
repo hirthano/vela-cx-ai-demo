@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Sparkles, Send, Loader2 } from "lucide-react";
+import { Sparkles, Send, Loader2, ArrowUpRight } from "lucide-react";
 
 const sampleResponses: Record<string, string> = {
   "Do you ship internationally?":
@@ -68,7 +68,7 @@ const Index = () => {
           className="group flex items-center gap-1.5 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-3.5 py-1.5 text-xs font-medium text-primary-foreground/90 backdrop-blur-sm transition-all hover:bg-primary-foreground/20 hover:text-primary-foreground">
           
           reorc.com
-          
+          <ArrowUpRight className="h-3 w-3 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
         </a>
       </nav>
 
@@ -84,8 +84,8 @@ const Index = () => {
           <h1 className="text-xl font-extrabold tracking-tight text-foreground sm:text-2xl">
             Try Your AI Customer Assistant
           </h1>
-          <p className="mt-1.5 text-xs text-muted-foreground sm:text-sm">Built from your public website - ask questions like a real customer would.
-
+          <p className="mt-1.5 text-xs text-muted-foreground sm:text-sm">
+            Built from your public website — ask questions like a real customer would.
           </p>
         </motion.div>
 
@@ -142,7 +142,7 @@ const Index = () => {
                   <Sparkles className="h-4 w-4 text-accent-foreground" />
                 </div>
                 <p className="text-center text-xs text-muted-foreground">
-                  Ask a question to get started.
+                  Ask a question or tap a prompt above to get started.
                 </p>
               </div>
             }

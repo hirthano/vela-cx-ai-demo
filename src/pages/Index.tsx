@@ -4,22 +4,22 @@ import { Sparkles, Send, Loader2, ArrowUpRight } from "lucide-react";
 
 const sampleResponses: Record<string, string> = {
   "Do you ship internationally?":
-    "Yes! We offer international shipping to most countries. Delivery times vary by region — typically 7-14 business days. Free shipping is available for orders over $100 within select regions.",
+  "Yes! We offer international shipping to most countries. Delivery times vary by region — typically 7-14 business days. Free shipping is available for orders over $100 within select regions.",
   "What is your return policy?":
-    "We offer a 30-day return policy for unused items in original packaging. Refunds are processed within 5-7 business days after we receive the returned item.",
+  "We offer a 30-day return policy for unused items in original packaging. Refunds are processed within 5-7 business days after we receive the returned item.",
   "How long does delivery take?":
-    "Domestic orders: 3-5 business days\nRegional (Southeast Asia): 5-10 business days\nInternational: 7-14 business days\n\nExpedited shipping options are available at checkout.",
+  "Domestic orders: 3-5 business days\nRegional (Southeast Asia): 5-10 business days\nInternational: 7-14 business days\n\nExpedited shipping options are available at checkout."
 };
 
 const prompts = [
-  "Do you ship internationally?",
-  "What is your return policy?",
-  "How long does delivery take?",
-];
+"Do you ship internationally?",
+"What is your return policy?",
+"How long does delivery take?"];
+
 
 const Index = () => {
   const [inputValue, setInputValue] = useState("");
-  const [messages, setMessages] = useState<{ role: "user" | "assistant"; content: string }[]>([]);
+  const [messages, setMessages] = useState<{role: "user" | "assistant";content: string;}[]>([]);
   const [isTyping, setIsTyping] = useState(false);
   const bottomRef = useRef<HTMLDivElement>(null);
 
@@ -34,8 +34,8 @@ const Index = () => {
     setInputValue("");
     setIsTyping(true);
     const response =
-      sampleResponses[msg] ||
-      "Great question! In a full deployment, I'd pull answers directly from your knowledge base and support systems to give accurate, real-time responses.";
+    sampleResponses[msg] ||
+    "Great question! In a full deployment, I'd pull answers directly from your knowledge base and support systems to give accurate, real-time responses.";
     setTimeout(() => {
       setIsTyping(false);
       setMessages((prev) => [...prev, { role: "assistant", content: response }]);
@@ -65,8 +65,8 @@ const Index = () => {
           href="https://reorc.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="group flex items-center gap-1.5 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-3.5 py-1.5 text-xs font-medium text-primary-foreground/90 backdrop-blur-sm transition-all hover:bg-primary-foreground/20 hover:text-primary-foreground"
-        >
+          className="group flex items-center gap-1.5 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-3.5 py-1.5 text-xs font-medium text-primary-foreground/90 backdrop-blur-sm transition-all hover:bg-primary-foreground/20 hover:text-primary-foreground">
+          
           reorc.com
           <ArrowUpRight className="h-3 w-3 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
         </a>
@@ -79,8 +79,8 @@ const Index = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="mb-4 text-center"
-        >
+          className="mb-4 text-center">
+          
           <h1 className="text-xl font-extrabold tracking-tight text-foreground sm:text-2xl">
             Try Your AI Customer Assistant
           </h1>
@@ -94,21 +94,21 @@ const Index = () => {
           initial={{ opacity: 0, y: 6 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.1 }}
-          className="mb-4 flex flex-wrap justify-center gap-3"
-        >
+          className="mb-4 flex flex-wrap justify-center gap-3">
+          
           {[
-            { icon: "🤖", text: "AI handles repetitive questions" },
-            { icon: "🤝", text: "AI + human collaboration" },
-            { icon: "⚙️", text: "Custom workflows & escalation" },
-          ].map((b, i) => (
-            <div
-              key={i}
-              className="flex items-center gap-2 rounded-full border border-border bg-card px-3.5 py-1.5 text-xs font-medium text-muted-foreground shadow-sm"
-            >
+          { icon: "🤖", text: "AI handles repetitive questions" },
+          { icon: "🤝", text: "AI + human collaboration" },
+          { icon: "⚙️", text: "Custom workflows & escalation" }].
+          map((b, i) =>
+          <div
+            key={i}
+            className="flex items-center gap-2 rounded-full border border-border bg-card px-3.5 py-1.5 text-xs font-medium text-muted-foreground shadow-sm">
+            
               <span>{b.icon}</span>
               {b.text}
             </div>
-          ))}
+          )}
         </motion.div>
 
         {/* Chat card */}
@@ -117,8 +117,8 @@ const Index = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.15, ease: "easeOut" }}
           className="flex w-full max-w-2xl min-h-0 flex-1 flex-col overflow-hidden rounded-2xl border border-border/60 bg-card shadow-lg"
-          style={{ boxShadow: "var(--shadow-chat)" }}
-        >
+          style={{ boxShadow: "var(--shadow-chat)" }}>
+          
           {/* Chat header */}
           <div className="flex items-center gap-2.5 border-b border-border/60 px-4 py-3">
             <div className="flex h-6 w-6 items-center justify-center rounded-lg" style={{ background: "var(--gradient-cta)" }}>
@@ -136,54 +136,54 @@ const Index = () => {
 
           {/* Messages */}
           <div className="flex-1 overflow-y-auto px-4 py-4">
-            {messages.length === 0 && !isTyping && (
-              <div className="flex h-full flex-col items-center justify-center gap-2">
+            {messages.length === 0 && !isTyping &&
+            <div className="flex h-full flex-col items-center justify-center gap-2">
                 <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-accent">
                   <Sparkles className="h-4 w-4 text-accent-foreground" />
                 </div>
                 <p className="text-center text-xs text-muted-foreground">
-                  Ask a question or tap a prompt above to get started.
+                  Ask a question to get started.
                 </p>
               </div>
-            )}
-            {messages.map((msg, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 6 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.25 }}
-                className={`mb-3 ${msg.role === "user" ? "flex justify-end" : ""}`}
-              >
-                {msg.role === "user" ? (
-                  <div className="max-w-[75%] rounded-2xl rounded-br-md px-4 py-2.5 text-sm text-primary-foreground" style={{ background: "var(--gradient-cta)" }}>
+            }
+            {messages.map((msg, i) =>
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 6 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.25 }}
+              className={`mb-3 ${msg.role === "user" ? "flex justify-end" : ""}`}>
+              
+                {msg.role === "user" ?
+              <div className="max-w-[75%] rounded-2xl rounded-br-md px-4 py-2.5 text-sm text-primary-foreground" style={{ background: "var(--gradient-cta)" }}>
+                    {msg.content}
+                  </div> :
+
+              <div className="max-w-[85%] rounded-2xl rounded-tl-md border border-border/50 bg-accent/30 px-4 py-3 text-sm leading-relaxed text-foreground whitespace-pre-line">
                     {msg.content}
                   </div>
-                ) : (
-                  <div className="max-w-[85%] rounded-2xl rounded-tl-md border border-border/50 bg-accent/30 px-4 py-3 text-sm leading-relaxed text-foreground whitespace-pre-line">
-                    {msg.content}
-                  </div>
-                )}
+              }
               </motion.div>
-            ))}
-            {isTyping && (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="flex items-center gap-2 text-muted-foreground"
-              >
+            )}
+            {isTyping &&
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="flex items-center gap-2 text-muted-foreground">
+              
                 <div className="flex gap-1">
-                  {[0, 1, 2].map((d) => (
-                    <motion.span
-                      key={d}
-                      className="h-1.5 w-1.5 rounded-full bg-primary/50"
-                      animate={{ y: [0, -4, 0] }}
-                      transition={{ duration: 0.6, repeat: Infinity, delay: d * 0.15 }}
-                    />
-                  ))}
+                  {[0, 1, 2].map((d) =>
+                <motion.span
+                  key={d}
+                  className="h-1.5 w-1.5 rounded-full bg-primary/50"
+                  animate={{ y: [0, -4, 0] }}
+                  transition={{ duration: 0.6, repeat: Infinity, delay: d * 0.15 }} />
+
+                )}
                 </div>
                 <span className="text-xs">Thinking…</span>
               </motion.div>
-            )}
+            }
             <div ref={bottomRef} />
           </div>
 
@@ -196,14 +196,14 @@ const Index = () => {
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Ask a question…"
-                className="flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground focus:outline-none"
-              />
+                className="flex-1 bg-transparent text-sm text-foreground placeholder:text-muted-foreground focus:outline-none" />
+              
               <button
                 onClick={() => handleSend()}
                 disabled={!inputValue.trim() || isTyping}
                 className="flex h-8 w-8 items-center justify-center rounded-lg text-primary-foreground transition-all disabled:opacity-30"
-                style={{ background: !inputValue.trim() || isTyping ? "hsl(var(--primary) / 0.3)" : "var(--gradient-cta)" }}
-              >
+                style={{ background: !inputValue.trim() || isTyping ? "hsl(var(--primary) / 0.3)" : "var(--gradient-cta)" }}>
+                
                 <Send className="h-3.5 w-3.5" />
               </button>
             </div>
@@ -215,8 +215,8 @@ const Index = () => {
           ⚡ This demo is based on limited public data only. After onboarding, our team will optimise your AI — building custom workflows, deeper knowledge bases, and fine-tuned responses for significantly better results.
         </p>
       </div>
-    </div>
-  );
+    </div>);
+
 };
 
 export default Index;

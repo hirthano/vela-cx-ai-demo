@@ -84,8 +84,8 @@ const Index = () => {
           <h1 className="text-xl font-extrabold tracking-tight text-foreground sm:text-2xl">
             Try Your AI Customer Assistant
           </h1>
-          <p className="mt-1.5 text-xs text-muted-foreground sm:text-sm">
-            Built from your public website — ask questions like a real customer would.
+          <p className="mt-1.5 text-xs text-muted-foreground sm:text-sm">Built from your public website - ask questions like a real customer would.
+
           </p>
         </motion.div>
 

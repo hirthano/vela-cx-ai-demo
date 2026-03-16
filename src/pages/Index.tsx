@@ -89,23 +89,25 @@ const Index = () => {
           </p>
         </motion.div>
 
-        {/* Prompt chips */}
+        {/* Key benefits */}
         <motion.div
           initial={{ opacity: 0, y: 6 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.1 }}
-          className="mb-4 flex flex-wrap justify-center gap-2"
+          className="mb-4 flex flex-wrap justify-center gap-3"
         >
-          {prompts.map((p, i) => (
-            <motion.button
+          {[
+            { icon: "🤖", text: "AI handles repetitive questions" },
+            { icon: "🤝", text: "AI + human collaboration" },
+            { icon: "⚙️", text: "Custom workflows & escalation" },
+          ].map((b, i) => (
+            <div
               key={i}
-              whileHover={{ scale: 1.03, y: -1 }}
-              whileTap={{ scale: 0.97 }}
-              onClick={() => handleSend(p)}
-              className="rounded-full border border-border bg-card px-3.5 py-1.5 text-xs font-medium text-muted-foreground shadow-sm transition-all hover:border-primary/30 hover:text-foreground hover:shadow-md"
+              className="flex items-center gap-2 rounded-full border border-border bg-card px-3.5 py-1.5 text-xs font-medium text-muted-foreground shadow-sm"
             >
-              {p}
-            </motion.button>
+              <span>{b.icon}</span>
+              {b.text}
+            </div>
           ))}
         </motion.div>
 

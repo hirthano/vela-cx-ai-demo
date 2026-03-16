@@ -85,7 +85,7 @@ const Index = () => {
             Try Your AI Customer Assistant
           </h1>
           <p className="mt-1.5 text-xs text-muted-foreground sm:text-sm">
-            Built from your public website — ask questions like a real customer would.
+            Built from your public website - ask questions like a real customer would.
           </p>
         </motion.div>
 

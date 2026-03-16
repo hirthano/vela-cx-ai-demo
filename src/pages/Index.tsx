@@ -68,7 +68,6 @@ const Index = () => {
           className="group flex items-center gap-1.5 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-3.5 py-1.5 text-xs font-medium text-primary-foreground/90 backdrop-blur-sm transition-all hover:bg-primary-foreground/20 hover:text-primary-foreground">
           
           reorc.com
-          <ArrowUpRight className="h-3 w-3 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
         </a>
       </nav>
 

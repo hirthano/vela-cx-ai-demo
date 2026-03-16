@@ -212,7 +212,7 @@ const Index = () => {
 
         {/* Footnote */}
         <p className="mt-3 max-w-lg text-center text-[10px] leading-relaxed text-muted-foreground">
-          ⚡ This demo is based on limited public data only. After onboarding, our team will optimise your AI — building custom workflows, deeper knowledge bases, and fine-tuned responses for significantly better results.
+          ⚡ This demo is based on limited public data only. After onboarding, our team will optimise your AI - building custom workflows, deeper knowledge bases, and fine-tuned responses for significantly better results.
         </p>
       </div>
     </div>);

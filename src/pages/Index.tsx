@@ -125,8 +125,8 @@ const Index = () => {
             <span className="text-sm font-semibold text-foreground">VelaCX Assistant</span>
             <span className="ml-auto flex items-center gap-1.5 text-[11px] text-muted-foreground">
               <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full opacity-75" style={{ backgroundColor: "hsl(160 84% 39%)" }} />
+                <span className="relative inline-flex h-2 w-2 rounded-full" style={{ backgroundColor: "hsl(160 84% 39%)" }} />
               </span>
               Online
             </span>

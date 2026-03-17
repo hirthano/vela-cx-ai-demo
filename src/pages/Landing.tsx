@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { ArrowRight, MessageSquare, Zap, Globe, Check } from "lucide-react";
+import { ArrowRight, MessageSquare, Zap, Globe, Check, AlertTriangle } from "lucide-react";
 import { toast } from "@/components/ui/sonner";
 
 const translations = {

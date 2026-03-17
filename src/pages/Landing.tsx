@@ -240,15 +240,8 @@ const Landing = () => {
               {t.heroDesc}
             </p>
 
-            {/* Problems */}
-            <ul className="mt-6 space-y-2">
-              {t.problems.map((p, i) => (
-                <li key={i} className="flex items-start gap-2.5">
-                  <AlertTriangle className="mt-0.5 h-3.5 w-3.5 shrink-0 text-destructive/70" />
-                  <span className="text-xs text-muted-foreground">{p}</span>
-                </li>
-              ))}
-            </ul>
+
+
 
             {/* Solutions */}
             <ul className="mt-6 space-y-2.5">

@@ -7,30 +7,36 @@ import { toast } from "@/components/ui/sonner";
 const translations = {
   en: {
     nav: "VelaCX",
-    heroTitle: "Your AI customer assistant,\nbuilt from your store.",
+    heroTitle: "Online businesses need\nreliable Customer Service.",
     heroDesc:
-      "VelaCX creates an AI assistant trained on your public website or e-commerce store — so your customers get instant, accurate answers.",
+      "No extra headcount. Fast, accurate chat responses — powered by AI and backed by professional agents, 24/7.",
+    problems: [
+      "Chat volume spikes during campaigns & promos",
+      "Time and money wasted on repetitive questions",
+      "Hard to build a team that's ready 24/7 year-round",
+    ],
     features: [
       {
         icon: MessageSquare,
-        title: "AI-Powered Support",
-        desc: "Handle repetitive customer questions automatically — 24/7, in any language.",
+        title: "AI + Human Agents",
+        desc: "AI auto-responds instantly; VelaCX agents handle complex complaints professionally.",
       },
       {
         icon: Zap,
-        title: "Seamless Handoff",
-        desc: "AI handles routine queries while your team focuses on complex issues.",
+        title: "Unified Dashboard",
+        desc: "All chats from Shopee, Lazada, TikTok & social media in one place.",
       },
       {
         icon: Globe,
-        title: "Works With Your Store",
-        desc: "Connect your TikTok Shop, Lazada, Shopee store, or any public website.",
+        title: "Full Seller Control",
+        desc: "Monitor response quality, jump into chats anytime, and leverage chat history for smarter replies.",
       },
     ],
     bullets: [
-      "Instant answers from your product catalog",
-      "Supports Bahasa, Vietnamese, English & more",
-      "Ready in under 24 hours",
+      "Auto-answers on orders, shipping, returns & store policies",
+      "Handles repetitive daily questions with smart AI",
+      "Escalates tough complaints to professional VelaCX staff",
+      "Tracks response speed & quality with clear daily reports",
     ],
     formTitle: "Try it with your store",
     formDesc:

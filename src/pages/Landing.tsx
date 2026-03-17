@@ -56,30 +56,36 @@ const translations = {
   },
   id: {
     nav: "VelaCX",
-    heroTitle: "Asisten AI pelanggan Anda,\ndibangun dari toko Anda.",
+    heroTitle: "Bisnis online butuh\nlayanan CS yang handal.",
     heroDesc:
-      "VelaCX membuat asisten AI yang dilatih dari situs web publik atau toko e-commerce Anda — sehingga pelanggan mendapat jawaban instan dan akurat.",
+      "Tanpa tambahan orang. Respon chat cepat dan akurat — didukung AI dan agen profesional, 24/7.",
+    problems: [
+      "Volume chat meningkat drastis saat campaign & promo",
+      "Waktu dan biaya terbuang untuk pertanyaan berulang",
+      "Sulit membentuk tim yang siap 24/7 sepanjang tahun",
+    ],
     features: [
       {
         icon: MessageSquare,
-        title: "Dukungan Bertenaga AI",
-        desc: "Tangani pertanyaan pelanggan berulang secara otomatis — 24/7, dalam bahasa apa pun.",
+        title: "AI + Agen Manusia",
+        desc: "AI merespons otomatis; agen VelaCX menangani komplain yang rumit secara profesional.",
       },
       {
         icon: Zap,
-        title: "Serah Terima Mulus",
-        desc: "AI menangani pertanyaan rutin sementara tim Anda fokus pada masalah kompleks.",
+        title: "Dashboard Terpadu",
+        desc: "Semua chat dari Shopee, Lazada, TikTok & medsos dalam satu tempat.",
       },
       {
         icon: Globe,
-        title: "Bekerja Dengan Toko Anda",
-        desc: "Hubungkan TikTok Shop, Lazada, Shopee, atau situs web publik apa pun.",
+        title: "Kendali Penuh Seller",
+        desc: "Pantau kualitas respon, masuk ke chat kapan saja, dan manfaatkan histori chat.",
       },
     ],
     bullets: [
-      "Jawaban instan dari katalog produk Anda",
-      "Mendukung Bahasa, Vietnam, Inggris & lainnya",
-      "Siap dalam waktu kurang dari 24 jam",
+      "Auto-jawab soal pesanan, pengiriman, retur & kebijakan toko",
+      "Tangani pertanyaan berulang setiap hari dengan AI cerdas",
+      "Eskalasi komplain sulit ke staf profesional VelaCX",
+      "Pantau kecepatan & kualitas respon dengan laporan harian",
     ],
     formTitle: "Coba dengan toko Anda",
     formDesc:
@@ -99,30 +105,36 @@ const translations = {
   },
   vi: {
     nav: "VelaCX",
-    heroTitle: "Trợ lý AI khách hàng,\nđược xây dựng từ cửa hàng của bạn.",
+    heroTitle: "Kinh doanh online cần\ndịch vụ CSKH đáng tin cậy.",
     heroDesc:
-      "VelaCX tạo trợ lý AI được đào tạo từ trang web hoặc cửa hàng thương mại điện tử của bạn — giúp khách hàng nhận câu trả lời chính xác ngay lập tức.",
+      "Không cần thêm nhân sự. Phản hồi chat nhanh, chính xác — bởi AI và đội ngũ chuyên nghiệp, 24/7.",
+    problems: [
+      "Lượng chat tăng vọt trong các đợt khuyến mãi",
+      "Lãng phí thời gian và chi phí cho câu hỏi lặp lại",
+      "Khó xây dựng đội ngũ sẵn sàng 24/7 quanh năm",
+    ],
     features: [
       {
         icon: MessageSquare,
-        title: "Hỗ trợ bằng AI",
-        desc: "Xử lý tự động các câu hỏi lặp lại của khách hàng — 24/7, bằng mọi ngôn ngữ.",
+        title: "AI + Nhân viên",
+        desc: "AI phản hồi tự động; nhân viên VelaCX xử lý khiếu nại phức tạp chuyên nghiệp.",
       },
       {
         icon: Zap,
-        title: "Chuyển giao liền mạch",
-        desc: "AI xử lý các truy vấn thông thường trong khi đội ngũ của bạn tập trung vào vấn đề phức tạp.",
+        title: "Dashboard hợp nhất",
+        desc: "Tất cả chat từ Shopee, Lazada, TikTok & mạng xã hội trong một nơi.",
       },
       {
         icon: Globe,
-        title: "Hoạt động với cửa hàng của bạn",
-        desc: "Kết nối TikTok Shop, Lazada, Shopee hoặc bất kỳ trang web công khai nào.",
+        title: "Kiểm soát toàn diện",
+        desc: "Theo dõi chất lượng phản hồi, tham gia chat bất cứ lúc nào, tận dụng lịch sử chat.",
       },
     ],
     bullets: [
-      "Câu trả lời tức thì từ danh mục sản phẩm",
-      "Hỗ trợ tiếng Việt, Bahasa, Anh & nhiều hơn",
-      "Sẵn sàng trong vòng 24 giờ",
+      "Tự động trả lời về đơn hàng, vận chuyển, đổi trả & chính sách",
+      "Xử lý câu hỏi lặp lại hàng ngày bằng AI thông minh",
+      "Chuyển khiếu nại khó đến nhân viên VelaCX chuyên nghiệp",
+      "Theo dõi tốc độ & chất lượng phản hồi qua báo cáo hàng ngày",
     ],
     formTitle: "Thử với cửa hàng của bạn",
     formDesc:
